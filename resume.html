@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Masud - Resume</title>
+    <style>
+        @media print {
+            body { margin: 0; }
+            .no-print { display: none; }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .resume {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px 50px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #6366f1;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            color: #6366f1;
+            margin-bottom: 5px;
+        }
+        
+        .header .title {
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .contact-info a {
+            color: #6366f1;
+            text-decoration: none;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            color: #6366f1;
+            border-bottom: 2px solid #6366f1;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .summary {
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .education-item, .project-item {
+            margin-bottom: 20px;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        
+        .item-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .item-subtitle {
+            color: #666;
+            font-style: italic;
+        }
+        
+        .item-date {
+            color: #6366f1;
+            font-weight: 600;
+        }
+        
+        .item-description {
+            color: #555;
+            margin-top: 5px;
+        }
+        
+        .item-description ul {
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+        
+        .item-description li {
+            margin-bottom: 5px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+        .skill-category h4 {
+            color: #6366f1;
+            margin-bottom: 8px;
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .skill-tag {
+            background: #e0e7ff;
+            color: #6366f1;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+        }
+        
+        .tech-stack {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+        
+        .tech-stack strong {
+            color: #6366f1;
+        }
+        
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #6366f1;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+        }
+        
+        .print-button:hover {
+            background: #4f46e5;
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button no-print" onclick="window.print()">📄 Print / Save as PDF</button>
+    
+    <div class="resume">
+        <!-- Header -->
+        <div class="header">
+            <h1>SYED MASUD</h1>
+            <div class="title">AI Engineer | Data Science Enthusiast</div>
+            <div class="contact-info">
+                <span>📧 s.masud080305@gmail.com</span>
+                <a href="https://github.com/SyedMasud7" target="_blank">🔗 GitHub</a>
+                <a href="https://www.linkedin.com/in/syed-masud-369312290" target="_blank">🔗 LinkedIn</a>
+            </div>
+        </div>
+        
+        <!-- Summary -->
+        <div class="section">
+            <h2 class="section-title">PROFESSIONAL SUMMARY</h2>
+            <p class="summary">
+                Aspiring AI Engineer with a strong foundation in Artificial Intelligence and Data Science. Currently pursuing BE in AI & Data Science with hands-on experience in developing intelligent applications. Passionate about leveraging machine learning and deep learning to create innovative solutions that address real-world challenges. Demonstrated ability to build end-to-end AI applications with modern frameworks and technologies.
+            </p>
+        </div>
+        
+        <!-- Education -->
+        <div class="section">
+            <h2 class="section-title">EDUCATION</h2>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Bachelor of Engineering (BE)</div>
+                        <div class="item-subtitle">Artificial Intelligence and Data Science</div>
+                    </div>
+                    <div class="item-date">Present</div>
+                </div>
+                <div class="item-description">
+                    <ul>
+                        <li>Comprehensive coursework in Machine Learning, Deep Learning, Data Analytics, and AI algorithms</li>
+                        <li>Hands-on projects involving neural networks, NLP, and computer vision</li>
+                        <li>Strong foundation in mathematics, statistics, and programming</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Higher Secondary Education (12th Standard)</div>
+                        <div class="item-subtitle">CBSE Board - Science Stream</div>
+                    </div>
+                    <div class="item-date">Completed</div>
+                </div>
+                <div class="item-description">
+                    <p><strong>Score:</strong> 77% | Strong foundation in Mathematics, Physics, and Computer Science</p>
+                </div>
+            </div>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Secondary Education (10th Standard)</div>
+                        <div class="item-subtitle">CBSE Board</div>
+                    </div>
+                    <div class="item-date">Completed</div>
+                </div>
+                <div class="item-description">
+                    <p><strong>Score:</strong> 75% | Completed schooling from CBSE Board with strong academic performance</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Projects -->
+        <div class="section">
+            <h2 class="section-title">PROJECTS</h2>
+            
+            <div class="project-item">
+                <div class="item-header">
+                    <div class="item-title">Hintify Professional - AI-Powered Learning Platform</div>
+                    <a href="https://github.com/SyedMasud7/Hintify" class="item-date" target="_blank">View on GitHub →</a>
+                </div>
+                <div class="item-description">
+                    <p>Developed an intelligent learning platform that generates adaptive hints and explanations for multiple-choice questions using AI.</p>
+                    <ul>
+                        <li>Built RESTful API backend using FastAPI with SQLAlchemy ORM for database management</li>
+                        <li>Integrated multiple AI providers (OpenAI, DeepSeek) with fallback mechanisms for reliability</li>
+                        <li>Implemented document parsing service to automatically generate questions from uploaded files (PDF, DOCX, PPTX)</li>
+                        <li>Created adaptive difficulty system that adjusts question complexity based on user performance</li>
+                        <li>Developed real-time analytics dashboard with performance tracking and insights</li>
+                        <li>Designed responsive frontend with vanilla JavaScript for optimal performance</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <strong>Tech Stack:</strong> Python, FastAPI, SQLAlchemy, OpenAI API, JavaScript, HTML/CSS, SQLite, Alembic
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Certifications -->
+        <div class="section">
+            <h2 class="section-title">CERTIFICATIONS</h2>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <div class="item-title">Infosys Springboard Certifications</div>
+                    <div class="item-date">Completed</div>
+                </div>
+                <div class="item-description">
+                    <div class="skill-tags" style="margin-top: 10px;">
+                        <span class="skill-tag">Computer Network</span>
+                        <span class="skill-tag">Python Programming</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">OOPS using JAVA</span>
+                        <span class="skill-tag">Apache Spark for Java Developers</span>
+                        <span class="skill-tag">Front End Web Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Skills -->
+        <div class="section">
+            <h2 class="section-title">TECHNICAL SKILLS</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>AI & Machine Learning</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Neural Networks</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Generative AI</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">Computer Vision</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C Programming</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Frameworks & Libraries</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Apache Spark</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Tools & Technologies</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git/GitHub</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">SQLite/PostgreSQL</span>
+                        <span class="skill-tag">Data Visualization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Additional Sections -->
+        <div class="section">
+            <h2 class="section-title">KEY COMPETENCIES</h2>
+            <div class="item-description">
+                <ul>
+                    <li><strong>Problem Solving:</strong> Strong analytical skills with ability to break down complex problems</li>
+                    <li><strong>Quick Learner:</strong> Rapidly adapts to new technologies and frameworks</li>
+                    <li><strong>Full-Stack Development:</strong> Experience in both backend and frontend development</li>
+                    <li><strong>AI Integration:</strong> Practical experience integrating AI APIs and building intelligent systems</li>
+                    <li><strong>Database Design:</strong> Proficient in designing and optimizing database schemas</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# Mac system files
+.DS_Store
+
+# Documentation files (keep local)
+HINTIFY_*.md
+RENDER_*.md
+PORTFOLIO_PRESENTATION_GUIDE.md
+
+# Local launch files
+launch-hintify.command
+launch-hintify.html
+
+# IDE
+.vscode/
